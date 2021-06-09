@@ -15,5 +15,12 @@ We train our network in [UDIS-D](https://github.com/nie-lang/UnsupervisedDeepIma
 
 ![image](https://github.com/nie-lang/Multi-Grid-Deep-Homogarphy/blob/main/figures/cross_dataset.png)
 
+## Dataset for training 
+We use [UDIS-D](https://github.com/nie-lang/UnsupervisedDeepImageStitching) for training, which is a real-world unsupervised image stitching dataset.
+
+## Training
+
+## Testing
+
 ## Meta
 NIE Lang -- nielang@bjtu.edu.cn
