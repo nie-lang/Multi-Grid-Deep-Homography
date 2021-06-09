@@ -11,6 +11,7 @@ In the following cases, we warp the target image (the second input image) to ali
 ![image](https://github.com/nie-lang/Multi-Grid-Deep-Homogarphy/blob/main/figures/real_comparison.jpg)
 
 ## Cross-dataset validation
+We train our network in [UDIS-D](https://github.com/nie-lang/UnsupervisedDeepImageStitching) and test it in other datasets. Specifically, we collect the datasets from classic image stitching papers, where these datasets are captured from different scenes and contains different degrees of parallax. Even if it is tested on other datasets, our solution still has good alignment capabilities. Especially the overlap rates between input images in these examples are pretty low and most deep learning solutions could fail in these scenes.
 
 ![image](https://github.com/nie-lang/Multi-Grid-Deep-Homogarphy/blob/main/figures/cross_dataset.png)
 
