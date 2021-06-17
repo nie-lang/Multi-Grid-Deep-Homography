@@ -1,7 +1,7 @@
 # Multi-Grid Deep Homogarphy (paper)
 **Multi-grid** deep homogarphy network in the scenes of **low overlap rates**. 
 
-The official implement of "Depth-Aware Multi-Grid Deep Homography Estimation with Contextual Correlation" in TensorFlow. The codes and models will be available when our paper is accepted.
+The official implement of "Depth-Aware Multi-Grid Deep Homography Estimation with Contextual Correlation" in TensorFlow. The codes and models will be available after our paper is accepted.
 
 ## Qualitatively comparisons with the state-of-the-arts
 Visual comparisons with other multi-grid homgraphy solutions on various scenes of varying degrees of parallax. 
