@@ -1,5 +1,8 @@
-# Multi-Grid Deep Homogarphy (paper)
-**Multi-grid** deep homogarphy network in the scenes of **low overlap rates**. 
+# Depth-Aware Multi-Grid Deep homogrpahy Estimation with Contextual Correlation (paper)
+<p align="center">Lang Nie*, Chunyu Lin*, Kang Liao*, Shuaicheng Liu`, Yao Zhao*</p>
+<p align="center">* Institute of Information Science, Beijing Jiaotong University</p>
+<p align="center">` School of Information and Communication Engineering, University of Electronic Science and Technology of China</p>
+
 
 The official implement of "Depth-Aware Multi-Grid Deep Homography Estimation with Contextual Correlation" in TensorFlow. The codes and models will be available after our paper is accepted.
 
