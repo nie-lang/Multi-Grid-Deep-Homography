@@ -27,3 +27,13 @@ We use [UDIS-D](https://github.com/nie-lang/UnsupervisedDeepImageStitching) for 
 
 ## Meta
 NIE Lang -- nielang@bjtu.edu.cn
+```
+@misc{nie2021depthaware,
+      title={Depth-Aware Multi-Grid Deep Homography Estimation with Contextual Correlation}, 
+      author={Lang Nie and Chunyu Lin and Kang Liao and Shuaicheng Liu and Yao Zhao},
+      year={2021},
+      eprint={2107.02524},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```
