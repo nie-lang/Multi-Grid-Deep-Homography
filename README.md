@@ -4,7 +4,7 @@
 <p align="center">` School of Information and Communication Engineering, University of Electronic Science and Technology of China</p>
 
 
-The official implement of "Depth-Aware Multi-Grid Deep Homography Estimation with Contextual Correlation" in TensorFlow. The codes and models will be available after our paper is accepted.
+Our paper has been accepted by IEEE TCSVT 2021, the codes will be available in this month.
 
 ## Qualitatively comparisons with the state-of-the-arts
 Visual comparisons with other multi-grid homgraphy solutions on various scenes of varying degrees of parallax. 
