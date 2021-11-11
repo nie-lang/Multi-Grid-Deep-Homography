@@ -12,7 +12,7 @@
 #### step 1
 We use [UDIS-D](https://github.com/nie-lang/UnsupervisedDeepImageStitching) for training. Please download it.
 #### step 2
-We adopt pretrained monocular depth estimation model to get the depth of 'input2' in the training set. Please download the results of depth estimation in [Google Drive](https://drive.google.com/file/d/1UTDIpNpl5te8RaO_Zt22bxYjNMLwl5ql/view?usp=sharing) or [Baidu Cloud](https://pan.baidu.com/s/16u2qyYRw6ciMuZz9hrdLoA)(Extraction code: 1234). Then place the 'depth2' folder in the 'training' folder of UDIS-D. (Please refer to the paper for more details about the depth. )
+We adopt a pretrained monocular depth estimation model to get the depth of 'input2' in the training set. Please download the results of depth estimation in [Google Drive](https://drive.google.com/file/d/1UTDIpNpl5te8RaO_Zt22bxYjNMLwl5ql/view?usp=sharing) or [Baidu Cloud](https://pan.baidu.com/s/16u2qyYRw6ciMuZz9hrdLoA)(Extraction code: 1234). Then place the 'depth2' folder in the 'training' folder of UDIS-D. (Please refer to the paper for more details about the depth. )
 
 ## Training
 
