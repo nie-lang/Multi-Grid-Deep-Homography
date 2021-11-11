@@ -8,25 +8,55 @@
 * numpy 1.18.1
 * tensorflow 1.13.1
 
-## Dataset for training 
+## Dataset Preparation
 #### step 1
 We use [UDIS-D](https://github.com/nie-lang/UnsupervisedDeepImageStitching) for training. Please download it.
 #### step 2
 We adopt a pretrained monocular depth estimation model to get the depth of 'input2' in the training set. Please download the results of depth estimation in [Google Drive](https://drive.google.com/file/d/1UTDIpNpl5te8RaO_Zt22bxYjNMLwl5ql/view?usp=sharing) or [Baidu Cloud](https://pan.baidu.com/s/16u2qyYRw6ciMuZz9hrdLoA)(Extraction code: 1234). Then place the 'depth2' folder in the 'training' folder of UDIS-D. (Please refer to the paper for more details about the depth. )
 
 ## Training
+#### Step 1: Training without depth assistance
+Modidy the 'Codes/constant.py' to set the 'TRAIN_FOLDER'/'ITERATIONS'/'GPU'. In our experiment, we set 'ITERATIONS' to 300,000.
+
+Modify the weight of shape-preserved loss in 'Codes/train_H.py' by setting 'lam_mesh' to 0.
+
+Then, start the training without depth assistance:
+```
+cd Codes/
+python train_H.py
+```
+#### Step 2: Finetuning with depth assistance
+Modidy the 'Codes/constant.py' to set the 'TRAIN_FOLDER'/'ITERATIONS'/'GPU'. In our experiment, we set 'ITERATIONS' to 500,000.
+
+Modify the weight of shape-preserved loss in 'Codes/train_H.py' by setting 'lam_mesh' to 10.
+
+Then, finetune the model with depth assistance:
+```
+python train_H.py
+```
 
 ## Testing
+#### Our pretrained model
+Our pretrained homography model can be available at [Google Drive](https://drive.google.com/drive/folders/1UO0_rttHDANPXX4eY4vizV99spWcqNod?usp=sharing) or [Baidu Cloud](https://pan.baidu.com/s/1cvrPjAfqBozkmU5XiSiJzA)(Extraction code: 1234).
+#### Testing with your own model
+Modidy the 'Codes/constant.py'to set the 'TEST_FOLDER'/'GPU'. The path for the checkpoint file can be modified in 'Codes/inference.py'.
+
+Run:
+```
+python inference.py
+```
+
 
 ## Meta
 NIE Lang -- nielang@bjtu.edu.cn
 ```
-@misc{nie2021depthaware,
-      title={Depth-Aware Multi-Grid Deep Homography Estimation with Contextual Correlation}, 
-      author={Lang Nie and Chunyu Lin and Kang Liao and Shuaicheng Liu and Yao Zhao},
-      year={2021},
-      eprint={2107.02524},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
-}
+@ARTICLE{9605632,
+  author={Nie, Lang and Lin, Chunyu and Liao, Kang and Liu, Shuaicheng and Zhao, Yao},
+  journal={IEEE Transactions on Circuits and Systems for Video Technology}, 
+  title={Depth-Aware Multi-Grid Deep Homography Estimation with Contextual Correlation}, 
+  year={2021},
+  volume={},
+  number={},
+  pages={1-1},
+  doi={10.1109/TCSVT.2021.3125736}}
 ```
