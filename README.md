@@ -37,7 +37,7 @@ python train_H.py
 
 ## Testing
 #### Our pretrained model
-Our pretrained homography model can be available at [Google Drive](https://drive.google.com/drive/folders/1UO0_rttHDANPXX4eY4vizV99spWcqNod?usp=sharing) or [Baidu Cloud](https://pan.baidu.com/s/1cvrPjAfqBozkmU5XiSiJzA)(Extraction code: 1234).
+Our pretrained homography model can be available at [Google Drive](https://drive.google.com/drive/folders/1UO0_rttHDANPXX4eY4vizV99spWcqNod?usp=sharing) or [Baidu Cloud](https://pan.baidu.com/s/1cvrPjAfqBozkmU5XiSiJzA)(Extraction code: 1234). And place it to 'Codes/checkpoints/' folder.
 #### Testing with your own model
 Modidy the 'Codes/constant.py'to set the 'TEST_FOLDER'/'GPU'. The path for the checkpoint file can be modified in 'Codes/inference.py'.
 
