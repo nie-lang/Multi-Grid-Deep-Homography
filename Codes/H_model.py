@@ -182,7 +182,7 @@ def CCL(c1, warp):
     h_one = tf.linspace(0., shape[1]-1., int(match_vol.shape[1]))
     w_one = tf.linspace(0., shape[2]-1., int(match_vol.shape[2]))
     h_one = tf.matmul(tf.expand_dims(h_one, 1), tf.ones(shape=tf.stack([1, shape[2]])))
-    w_one = tf.matmul(tf.ones(shape=tf.stack([shape[2], 1])), tf.transpose(tf.expand_dims(w_one, 1), [1, 0]))
+    w_one = tf.matmul(tf.ones(shape=tf.stack([shape[1], 1])), tf.transpose(tf.expand_dims(w_one, 1), [1, 0]))
     h_one = tf.tile(tf.expand_dims(tf.expand_dims(h_one, 0),3), [shape[0],1,1,channels])
     w_one = tf.tile(tf.expand_dims(tf.expand_dims(w_one, 0),3), [shape[0],1,1,channels])
     
