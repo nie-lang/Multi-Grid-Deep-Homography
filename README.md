@@ -9,6 +9,10 @@
 * numpy 1.18.1
 * tensorflow 1.13.1
 
+## For pytorch users
+The official codes are based on tensorflow. We also provide a simple pytorch implementation of CCL for pytorch users, please refer to .
+The pytorch version has not been strictly tested. If you encounter some problems, please feel free to concat me (nielang@bjtu.edu.cn).
+
 ## Dataset Preparation
 #### step 1
 We use [UDIS-D](https://github.com/nie-lang/UnsupervisedDeepImageStitching) for training. Please download it.
@@ -51,16 +55,17 @@ python inference.py
 ```
 
 
+
 ## Meta
 NIE Lang -- nielang@bjtu.edu.cn
 ```
 @ARTICLE{9605632,
   author={Nie, Lang and Lin, Chunyu and Liao, Kang and Liu, Shuaicheng and Zhao, Yao},
   journal={IEEE Transactions on Circuits and Systems for Video Technology}, 
-  title={Depth-Aware Multi-Grid Deep Homography Estimation with Contextual Correlation}, 
-  year={2021},
-  volume={},
-  number={},
-  pages={1-1},
+  title={Depth-Aware Multi-Grid Deep Homography Estimation With Contextual Correlation}, 
+  year={2022},
+  volume={32},
+  number={7},
+  pages={4460-4472},
   doi={10.1109/TCSVT.2021.3125736}}
 ```
